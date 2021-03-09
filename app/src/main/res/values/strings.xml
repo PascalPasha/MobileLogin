@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MobileLogin</string>
+    <string name="judul">Mobile LOGIN</string>
+    <string name="temail">Email</string>
+    <string name="tpassword">Password</string>
+    <string name="btnlogin">Sign In</string>
+    <string name="cbrememberme">Remember Me</string>
+    <string name="tdaftar">Daftar?</string>
+    <string name="btnbutton1">Button1</string>
+    <string name="tRegistrasi">Registrasi</string>
+    <string name="tNama">Nama</string>
+    <string name="tTTL">Tempat, Tanggal Lahir</string>
+    <string name="tAlamat">Alamat</string>
+    <string name="txbtnRegis">Registrasi</string>
+</resources>
