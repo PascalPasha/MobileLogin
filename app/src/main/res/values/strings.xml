@@ -12,4 +12,5 @@
     <string name="tTTL">Tempat, Tanggal Lahir</string>
     <string name="tAlamat">Alamat</string>
     <string name="txbtnRegis">Registrasi</string>
+    <string name="tvhasil">Selamat Datang</string>
 </resources>
