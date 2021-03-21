@@ -13,4 +13,6 @@
     <string name="tAlamat">Alamat</string>
     <string name="txbtnRegis">Registrasi</string>
     <string name="tvhasil">Selamat Datang</string>
+    <string name="tvemail">Hasil Email</string>
+    <string name="tvpassword">Hasil Password</string>
 </resources>

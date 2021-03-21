@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
                 mail = edemail.getText().toString();
                 pwd = edpassword.getText().toString();
 
+                String email = "pahlevi.pasha09@gmail.com";
+                String pass = "12345";
+
                 if (mail.equals("") || pwd.equals("")){
                     Toast.makeText(MainActivity.this, "Mohon diisi terlebih dahulu username dan password nya !", Toast.LENGTH_SHORT).show();
                 }
@@ -45,7 +48,14 @@ public class MainActivity extends AppCompatActivity {
                     {
                         Toast.makeText(MainActivity.this, "Login berhasil ...", Toast.LENGTH_SHORT).show();
 
+                        Bundle y = new Bundle();
+                        y.putString("a", mail.trim());
+                        y.putString("b", pwd.trim());
+
                         Intent next = new Intent(MainActivity.this, Hasil.class);startActivity(next);
+
+                        next.putExtras(y);
+                        startActivity(next);
                     }
                     else {
                         Toast.makeText(MainActivity.this, "Login gagal ... ", Toast.LENGTH_SHORT).show();

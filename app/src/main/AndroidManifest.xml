@@ -8,7 +8,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Hasil"></activity>
+        <activity android:name=".Hasil"
+            android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".activity_registrasi" />
         <activity android:name=".MainActivity">
             <intent-filter>
