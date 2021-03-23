@@ -1,10 +1,14 @@
 package com.example.mobilelogin;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,7 +17,7 @@ import android.widget.Toast;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     Button button;
     TextView regis;
     EditText edemail,edpassword;
@@ -37,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 mail = edemail.getText().toString();
                 pwd = edpassword.getText().toString();
 
-                String email = "pahlevi.pasha09@gmail.com";
-                String pass = "12345";
+                String mail = "pahlevi.pasha09@gmail.com";
+                String pwd = "12345";
 
                 if (mail.equals("") || pwd.equals("")){
                     Toast.makeText(MainActivity.this, "Mohon diisi terlebih dahulu username dan password nya !", Toast.LENGTH_SHORT).show();
@@ -48,14 +52,10 @@ public class MainActivity extends AppCompatActivity {
                     {
                         Toast.makeText(MainActivity.this, "Login berhasil ...", Toast.LENGTH_SHORT).show();
 
-                        Bundle y = new Bundle();
-                        y.putString("a", mail.trim());
-                        y.putString("b", pwd.trim());
 
                         Intent next = new Intent(MainActivity.this, Hasil.class);startActivity(next);
 
-                        next.putExtras(y);
-                        startActivity(next);
+
                     }
                     else {
                         Toast.makeText(MainActivity.this, "Login gagal ... ", Toast.LENGTH_SHORT).show();
@@ -75,4 +75,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected( MenuItem item) {
+        if (item.getItemId() == R.id.about){
+            Toast.makeText(this, "Versi yang kamu pakai sudah dalam versi terbaru", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }

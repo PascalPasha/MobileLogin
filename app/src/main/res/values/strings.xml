@@ -15,4 +15,5 @@
     <string name="tvhasil">Selamat Datang</string>
     <string name="tvemail">Hasil Email</string>
     <string name="tvpassword">Hasil Password</string>
+    <string name="tAbout">About</string>
 </resources>
