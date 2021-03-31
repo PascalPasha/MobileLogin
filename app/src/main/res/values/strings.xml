@@ -16,4 +16,13 @@
     <string name="tvemail">Hasil Email</string>
     <string name="tvpassword">Hasil Password</string>
     <string name="tAbout">About</string>
+    <string name="tlihatdata">lihat data</string>
+    <string name="teditdata">Edit data</string>
+    <string name="tdatakontak">Data kontak</string>
+    <string name="tdetailkontak">Detail kontak</string>
+    <string name="tnamaitem">Nama Item</string>
+    <string name="tnama">Nama</string>
+    <string name="tnohp">No Telepon</string>
+
+
 </resources>

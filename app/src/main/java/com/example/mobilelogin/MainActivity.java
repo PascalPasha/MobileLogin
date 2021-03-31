@@ -1,7 +1,5 @@
 package com.example.mobilelogin;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.app.Activity;
@@ -53,7 +51,7 @@ public class MainActivity extends Activity {
                         Toast.makeText(MainActivity.this, "Login berhasil ...", Toast.LENGTH_SHORT).show();
 
 
-                        Intent next = new Intent(MainActivity.this, Hasil.class);startActivity(next);
+                        Intent next = new Intent(MainActivity.this, Home_Activity2.class);startActivity(next);
 
 
                     }
